@@ -1,0 +1,80 @@
+# Environment & Secrets — all .env files contain API keys and tokens
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+
+# SQLite Databases — local runtime data with user messages and settings
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+data/*.sqlite
+
+# Runtime JSON state — group settings, course caches, fun copy status
+data/*.json
+!data/*.ttf
+
+# Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+*.egg-info/
+dist/
+build/
+eggs/
+*.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+.poetry/
+.pdm/
+
+# IDE and editor configs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs — runtime output, may contain message content
+*.log
+logs/
+log/
+ql/log/
+
+# Internal audit and security documents
+AUDIT_REPORT.md
+.security_backup/
+
+# Temp and runtime files
+*.tmp
+*.temp
+music_tmp/
+data/music_tmp/
+
+# Docker and deployment
+docker-compose.override.yml
